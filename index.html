@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../javascript.js" defer></script>
+    <title>Test Site</title>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <span class="logo">HeaderSec</span>
+
+            <div onclick="openSideBar()" class="open-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </div>
+    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li class="login"><a href="#">Login</a></li>
+                </ul>
+    
+                <div onclick="closeSideBar()" class="close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </div>
+            </nav>
+            <div onclick="closeSideBar()" class="overlay"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section id="hero">
+        <div class="container">
+        <div class="hero-texts">
+            <h1>Lorem ipsum dolor</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam natus vel incidunt provident, 
+                non enim, nemo debitis sit consectetur qui nisi corporis exercitationem.
+            </p>
+            <a href="google.com" class="button-cta">Get Started</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="../img/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="">
+        </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about">
+        <div class="container">
+        <div class="heading">
+            <h2>About Us</h2>
+        </div>
+
+        <div class="about-text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam atque nesciunt velit quidem aliquam cum repudiandae recusandae! Nulla eaque fuga delectus molestias necessitatibus provident aperiam qui iste temporibus nobis similique harum officiis, eos, sit nihil minima recusandae quas incidunt est culpa error alias? Officiis quis necessitatibus dolorem harum doloremque quam minus saepe quod provident minima sunt quos delectus cum maiores eum facere, ut, sequi vel a incidunt, consequuntur impedit excepturi commodi? Ex, maxime iure? Incidunt, provident voluptate vel nam error aperiam ad autem dolores a et eos est odit dolorum qui iste perspiciatis adipisci eaque. Esse eos aliquid sed sapiente.</p>
+        </div>
+        </div>
+        </section>
+
+        <!-- testimonials section -->
+        <section id="testimonials">
+        <div class="container">
+        <div class="heading">
+            <h2>Testimonials</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="../img/person.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iusto molestiae magni sunt sit unde cupiditate libero sed vitae expedita!</p>
+            </div>
+            <div class="card">
+                <img src="../img/person.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iusto molestiae magni sunt sit unde cupiditate libero sed vitae expedita!</p>
+            </div>
+            <div class="card">
+                <img src="../img/person.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iusto molestiae magni sunt sit unde cupiditate libero sed vitae expedita!</p>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- contact us section -->
+        <section id="contact">
+            <div class="heading">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="container">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Your E-mail">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+                <div class="contact-img">
+                    <img src="../img/person.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer id="footer">
+        <div class="container">
+            <span class="footer-logo">FooterSec</span>
+
+            <div class="socials-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
